@@ -1,0 +1,38 @@
+#app {
+  @include flexCenter();
+  width: 400px;
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+  h1,
+  h3 {
+    margin-bottom: $marginBottom;
+    font-weight: normal;
+  }
+  img {
+    border-radius: 50%;
+    border: 5px $color solid;
+    margin-bottom: $marginBottom;
+  }
+  .male {
+    @include gender($primaryColor, $primaryColor);
+  }
+  .female {
+    @include gender($secondaryColor, $secondaryColor);
+  }
+  button {
+    cursor: pointer;
+    display: inline-block;
+    background: $color;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    padding: 1rem 1.5rem;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      transform: scale(0.98);
+    }
+  }
+}

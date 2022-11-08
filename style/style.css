@@ -1,0 +1,54 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+}
+#app h1,
+#app h3 {
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+#app img {
+  border-radius: 50%;
+  border: 5px #333 solid;
+  margin-bottom: 1rem;
+}
+#app .male {
+  border-color: steelBlue;
+  background-color: steelBlue;
+}
+#app .female {
+  border-color: pink;
+  background-color: pink;
+}
+#app button {
+  cursor: pointer;
+  display: inline-block;
+  background: #333;
+  color: white;
+  font-size: 18px;
+  border: 0;
+  padding: 1rem 1.5rem;
+}
+#app button:focus {
+  outline: none;
+}
+#app button:hover {
+  transform: scale(0.98);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}/*# sourceMappingURL=style.css.map */

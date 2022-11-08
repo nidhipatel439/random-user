@@ -1,0 +1,16 @@
+$primaryColor: steelBlue;
+$secondaryColor: pink;
+$color: #333;
+$marginBottom: 1rem;
+
+@mixin flexCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin gender($borderColor, $bgColor) {
+  border-color: $borderColor;
+  background-color: $bgColor;
+}
